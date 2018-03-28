@@ -1,5 +1,6 @@
 # Relatório sobre a atividade
   
+  
   - Entendi com usar lista encadeada.
   
   - Dificuldade em implementar a soluçã do exercício na linguem C.
@@ -11,6 +12,7 @@
   - Fiz a atividade com a ajuda de amigos e da vídeo aula do YouTube.
 
 ## O que foi feito?
+  
   
   - Refiz todo o código, com a mesma lógica apresentada na vídeo aula.
   
