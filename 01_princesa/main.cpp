@@ -22,7 +22,7 @@ int main()
 
     int quantidade = 0;
     int escolhido = 0;
-    int salto = 0;
+    
 
 
 
@@ -32,26 +32,22 @@ int main()
     cout << "Informe o elemento inicial: ";
     cin >> escolhido;
 
-    cout << "Informe o salto desejado: ";
-    cin >> salto;
-
     list<int> participantes;
 
     alimentaLista(participantes,quantidade);
 
     imprimirLista(participantes);
 
-
-
-
+    //Define o participante inicial
     while(participantes.front() != escolhido){
 
-        participantes.push_back(participantes.front());
-        participantes.pop_front();
+        participantes.push_back(participantes.front());//adiciono o elemento do início da lista, na última posição da lista
+        participantes.pop_front();//removo o elemento da primeira posição da lista
     }
 
 
-    while(participantes.size() > salto){
+    //Esse laço realiza a retirada de elementos com base no participante inicial
+    while(participantes.size() > 1){
         participantes.push_back(participantes.front());
         participantes.pop_front();
         participantes.pop_front();
