@@ -7,8 +7,8 @@
   - Fiz a atividade com a ajuda de amigos e da vídeo aula do YouTube.
 
 ## O que foi feito?
-
-  - Refiz todo o código, com a mesma lógica apresentada na vídeo aula.
+  
+  - Refiz todo o código, com a mesma lógica apresentada na vídeo aula.
   - Foram criadas duas funçes, uma para alimentar a lista e a outra para mostrar seus elementos.
   - Para verificar o elemento inicial, é preciso verificar se o primeiro elemento da lista coincide com
     o elemento inicial, caso não seja de mesmo valor, o elemento verificado é armazenado no final da lista.
