@@ -72,39 +72,37 @@ void triangulo(Pen& p, int lado){
 
 }
 
-void gelinho(Pen& p, int lado){
+void flocoDeNeve(Pen& p, int lado){
 
     if(lado < 3)
         return;
-
-
     p.setColor(10,150,255);
     p.setThickness(3);
 
     p.walk(lado);
     p.right(72);
     p.walk(-lado);
-    gelinho(p, lado / 3);
+    flocoDeNeve(p, lado / 3);
 
     p.walk(lado);
     p.right(72);
     p.walk(-lado);
-    gelinho(p, lado / 3);
+    flocoDeNeve(p, lado / 3);
 
     p.walk(lado);
     p.right(72);
     p.walk(-lado);
-    gelinho(p, lado / 3);
+    flocoDeNeve(p, lado / 3);
 
     p.walk(lado);
     p.right(72);
     p.walk(-lado);
-    gelinho(p, lado / 3);
+    flocoDeNeve(p, lado / 3);
 
     p.walk(lado);
     p.right(72);
     p.walk(-lado);
-    gelinho(p, lado / 3);
+    flocoDeNeve(p, lado / 3);
 
 
 
@@ -115,15 +113,18 @@ void trigo(Pen& p,int lado){
     if(lado < 0.1)
         return;
     p.setColor(200,150,100);
-    for(int i = 0; i < 7; i++){
+    for(int i = 0; i < 4; i++){
         p.walk(lado);
         p.right(45);
-        trigo(p, lado / 5);
+        trigo(p, lado / 2.5);
         p.left(90);
-        trigo(p, lado / 5);
+        trigo(p, lado / 2.5);
         p.right(45);
+
     }
-    p.walk(-lado * 7);
+
+    p.walk(-lado * 4);
+
 
 }
 
@@ -133,25 +134,25 @@ void fractal(){
     //p.setThickness(3); //espessura da linha
 
     //coloca o pincel na posicao x 300 y 500
-    p.setXY(400, 300);
+    p.setXY(400, 500);
 
     //faz o pincel apontar pra direita
 
-    p.setHeading(90);
+    p.setHeading(0);
 
     //se speed = 0 entao ele faz o mais rapido possivel
     //se foi a partir de 1 ele controla a velocidade
     p.setSpeed(30);
 
-    int lado = 30;
+    int lado = 100;
 //================================Funções======================================
 
     //emboa(p, lado);
     //arvore(p, lado);
     //triangulo(p,lado);
-    // gelinho(p,lado);
+    //flocoDeNeve(p,lado);
+    //trigo(p,lado);
 
-    trigo(p,lado);
 
     //espera clicar no botao de fechar
     p.wait();
