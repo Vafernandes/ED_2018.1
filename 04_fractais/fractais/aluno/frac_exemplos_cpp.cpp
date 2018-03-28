@@ -78,29 +78,32 @@ void gelinho(Pen& p, int lado){
         return;
 
 
-    p.left(72);
+    p.setColor(10,150,255);
+    p.setThickness(3);
+
     p.walk(lado);
-    //p.walk(-lado);
+    p.right(72);
+    p.walk(-lado);
     gelinho(p, lado / 3);
 
-    p.walk(-lado);
-    p.left(72);
     p.walk(lado);
+    p.right(72);
+    p.walk(-lado);
     gelinho(p, lado / 3);
 
-    p.walk(-lado);
-    p.left(72);
     p.walk(lado);
+    p.right(72);
+    p.walk(-lado);
     gelinho(p, lado / 3);
 
-    p.walk(-lado);
-    p.left(72);
     p.walk(lado);
+    p.right(72);
+    p.walk(-lado);
     gelinho(p, lado / 3);
 
-    p.walk(-lado);
-    p.left(72);
     p.walk(lado);
+    p.right(72);
+    p.walk(-lado);
     gelinho(p, lado / 3);
 
 
