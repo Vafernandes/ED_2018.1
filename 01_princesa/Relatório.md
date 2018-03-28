@@ -1,8 +1,8 @@
 # Relatório sobre a atividade
   
   - Entendi com usar lista encadeada.
-  - Dificuldade em implementar a soluçã do exercício na linguem C.
-  - A atividade foi implementada em C++.
+  - Dificuldade em implementar a soluçã do exercício na linguem C
+  - A atividade foi implementada em C++
   - O exercício foi bom para aprender alguns comandos da linguagem.
   - Fiz a atividade com a ajuda de amigos e da vídeo aula do YouTube.
 
