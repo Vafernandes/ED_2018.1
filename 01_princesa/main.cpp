@@ -22,15 +22,16 @@ int main()
 
     int quantidade = 0;
     int escolhido = 0;
-    
-
-
+    int salto = 0;
 
     cout << "Informe o numero de participantes: ";
     cin >> quantidade;
 
     cout << "Informe o elemento inicial: ";
     cin >> escolhido;
+
+    cout << "Informe o número de slatos";
+    cin >> salto;
 
     list<int> participantes;
 
@@ -48,10 +49,15 @@ int main()
 
     //Esse laço realiza a retirada de elementos com base no participante inicial
     while(participantes.size() > 1){
-        participantes.push_back(participantes.front());
-        participantes.pop_front();
-        participantes.pop_front();
-        imprimirLista(participantes);
+        //Realiza o número de saltos
+        while(salto > 0 ){
+            participantes.push_back(participantes.front());
+            participantes.pop_front();
+            salto--;
+        }
+            participantes.pop_front();
+            imprimirLista(participantes);
+
     }
 
     return 0;
