@@ -134,7 +134,7 @@ void fractal(){
     //p.setThickness(3); //espessura da linha
 
     //coloca o pincel na posicao x 300 y 500
-    p.setXY(400, 500);
+    p.setXY(400, 300);
 
     //faz o pincel apontar pra direita
 
@@ -142,9 +142,9 @@ void fractal(){
 
     //se speed = 0 entao ele faz o mais rapido possivel
     //se foi a partir de 1 ele controla a velocidade
-    p.setSpeed(30);
+    p.setSpeed(70);
 
-    int lado = 100;
+    int lado = 200;
 //================================Funções======================================
 
     //emboa(p, lado);
