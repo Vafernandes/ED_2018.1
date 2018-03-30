@@ -19,7 +19,7 @@ void imprimirLista(list<int> lista){
 
 int main()
 {
-
+    //Todos os atributos começaam com zero	
     int quantidade = 0;
     int escolhido = 0;
     int salto = 0;
