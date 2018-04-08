@@ -128,6 +128,31 @@ void trigo(Pen& p,int lado){
 
 }
 
+void quadradoEspiral(Pen& p, int lado){
+
+        if(lado < 5)
+            return;
+        for(int i = 0; i < 1; i++){
+            p.walk(lado);
+            p.right(90);
+
+            p.walk(lado);
+            p.right(90);
+
+            p.walk(lado);
+            p.right(90);
+
+            p.walk(lado);
+
+            p.up();
+
+            p.walk(lado);
+            p.rotate(60);
+            p.down();
+            quadradoEspiral(p, lado - 5);
+        }
+}
+
 void fractal(){
 
     Pen p(800, 600);
@@ -138,13 +163,13 @@ void fractal(){
 
     //faz o pincel apontar pra direita
 
-    p.setHeading(0);
+    p.setHeading(90);
 
     //se speed = 0 entao ele faz o mais rapido possivel
     //se foi a partir de 1 ele controla a velocidade
-    p.setSpeed(70);
+    p.setSpeed(0);
 
-    int lado = 200;
+    int lado = 100;
 //================================Funções======================================
 
     //emboa(p, lado);
@@ -152,7 +177,7 @@ void fractal(){
     //triangulo(p,lado);
     //flocoDeNeve(p,lado);
     //trigo(p,lado);
-
+    quadradoEspiral(p,lado);
 
     //espera clicar no botao de fechar
     p.wait();
