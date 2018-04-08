@@ -8,6 +8,10 @@
   
   - Feita em grupo.
   
+  
+  - Dificuldade em aumentar a espessura em diferentes níveis da recursão.
+  
+  
 # O que foi feito?
 
   - Os fractais emboa, triângulo, floco de neve, trigo, árvore.

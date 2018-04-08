@@ -4,12 +4,12 @@
   
   - A maior dificuldade foi "salvar" os dados do vetor original.
   
-  - Fiz o trabalho com a ajuda de uma vídeo aula no youTube.
+  - Fiz o trabalho com a ajuda de uma vídeo aula no youTube(canal Loiane Groner).
   
   ## O que foi feito?
   
-  - A criação da função reserve.
+  - A criação da função reserve,size e capacity.
   
   - Foi criado um vetor para salvar os dados do vetor inicial, os valores contidos 
-    no vetor inicial foram armazenados através de um laço for e por fim, a capacidade
+    no vetor inicial foram armazenados através de um laço "for" e por fim, a capacidade
     foi atualizada para a nova capacidade.
