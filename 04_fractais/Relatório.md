@@ -1,4 +1,4 @@
-## Relatório
+# Relatório
   
   - A atividade foi implementada em C++.
   
@@ -12,9 +12,9 @@
   - Dificuldade em aumentar a espessura em diferentes níveis da recursão.
   
   
-# O que foi feito?
+## O que foi feito?
 
-  - Os fractais emboa, triângulo, floco de neve, trigo, árvore.
+  - Os fractais emboa, triângulo, floco de neve, trigo, árvore, quadrado espiral.
   
   - O FLOCO DE NEVE consiste na chamada de 5 blocos com a recursividade, basicamente 
     foi preciso andar o valor do lado virar seu respectivo ângulo(72 graus já que eram 5 lados), 
@@ -29,3 +29,8 @@
     fora do laço tem mais uma instrução onde o valor de volta(- lado) será multiplicado 
     pela condição de parada que há dentro do laço, para que a figura possa ser desenhada, se
     não existir essa parte do código, a figura irá desenhar apenas apara o lado que virar no início da função. 
+
+  - QUADRADO ESPIRAL tive ajuda de um amigo de sala, Rendley, que me orientou na lógica da recursão, que basicamente
+    fazemos um laço 'for', e desenhamos o primeiro quadrado antes de chamar a recursão, andamos um lado para dar
+    espaço e desenhar outro triângulo, faremos uma elevação com a função 'up', para que o próximo quadrado não fique 
+    no mesmo nível que o quadrado anterior, com um pequena inclinação, após isso, chamaremos a recusão.
