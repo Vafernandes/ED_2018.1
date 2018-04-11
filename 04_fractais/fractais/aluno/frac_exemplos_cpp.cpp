@@ -51,7 +51,7 @@ void arvore(Pen& p, int lado){
 
 }
 
-//==========================================Triângulo
+//========================================== Triângulo ================================
 
 void triangulo(Pen& p, int lado){
 
@@ -71,6 +71,8 @@ void triangulo(Pen& p, int lado){
 
 
 }
+
+//============================================ Floco De Neve ================================
 
 void flocoDeNeve(Pen& p, int lado){
 
@@ -108,6 +110,8 @@ void flocoDeNeve(Pen& p, int lado){
 
 }
 
+//=============================================== Trigo ==============================
+
 void trigo(Pen& p,int lado){
 
     if(lado < 0.1)
@@ -127,6 +131,8 @@ void trigo(Pen& p,int lado){
 
 
 }
+
+//========================================== Quadrado espiral =====================================
 
 void quadradoEspiral(Pen& p, int lado){
 
@@ -153,15 +159,16 @@ void quadradoEspiral(Pen& p, int lado){
 
 }
 
-void circulos(Pen &p, int lado){
+//========================================== circulo ==================================
+
+void circulo(Pen &p, int lado){
     if(lado < 1)
         return;
-    p.setColor(rand()%255, rand()%255 ,rand()%255);
+
     p.circle(lado);
     for(int i = 0; i < 6; i++){
         p.right(60);
         p.up();
-        p.setColor(rand()%255, rand()%255 ,rand()%255);
         p.walk(lado);
         p.down();
         circulos(p, lado * 0.4 );
@@ -196,8 +203,8 @@ void fractal(){
     //triangulo(p,lado);
     //flocoDeNeve(p,lado);
     //trigo(p,lado);
-    quadradoEspiral(p,lado);
-    //circulos(p,lado);
+    //quadradoEspiral(p,lado);
+    //circulo(p,lado);
     //espera clicar no botao de fechar
     p.wait();
 }
