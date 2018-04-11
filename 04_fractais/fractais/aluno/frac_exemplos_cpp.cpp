@@ -171,7 +171,7 @@ void circulo(Pen &p, int lado){
         p.up();
         p.walk(lado);
         p.down();
-        circulos(p, lado * 0.4 );
+        circulo(p, lado * 0.4 );
         p.up();
         p.walk(-lado);
         p.down();
@@ -203,7 +203,7 @@ void fractal(){
     //triangulo(p,lado);
     //flocoDeNeve(p,lado);
     //trigo(p,lado);
-    //quadradoEspiral(p,lado);
+    quadradoEspiral(p,lado);
     //circulo(p,lado);
     //espera clicar no botao de fechar
     p.wait();
