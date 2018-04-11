@@ -164,9 +164,16 @@ void quadradoEspiral(Pen& p, int lado){
 void circulo(Pen &p, int lado){
     if(lado < 1)
         return;
+        p.circle(lado);
 
-    p.circle(lado);
-    for(int i = 0; i < 6; i++){
+        p.right(60);
+        p.up();
+        p.walk(lado);
+        p.down();
+        circulo(p, lado * 0.4);
+        p.up();
+        p.walk(-lado);
+
         p.right(60);
         p.up();
         p.walk(lado);
@@ -174,7 +181,58 @@ void circulo(Pen &p, int lado){
         circulo(p, lado * 0.4 );
         p.up();
         p.walk(-lado);
+
+
+        p.right(60);
+        p.up();
+        p.walk(lado);
         p.down();
+        circulo(p, lado * 0.4 );
+        p.up();
+        p.walk(-lado);
+
+
+        p.right(60);
+        p.up();
+        p.walk(lado);
+        p.down();
+        circulo(p, lado * 0.4 );
+        p.up();
+        p.walk(-lado);
+
+
+        p.right(60);
+        p.up();
+        p.walk(lado);
+        p.down();
+        circulo(p, lado * 0.4 );
+        p.up();
+        p.walk(-lado);
+
+
+        p.right(60);
+        p.up();
+        p.walk(lado);
+        p.down();
+        circulo(p, lado * 0.4 );
+        p.up();
+        p.walk(-lado);
+
+}
+
+void oErradoQueDeuCerto(Pen& p, int lado){
+    if(lado < 1)
+        return;
+        p.circle(lado);
+    for(int i = 0; i < 6; i++){
+        p.right(60);
+        p.up();
+        p.walk(lado);
+        p.down();
+        oErradoQueDeuCerto(p, lado * 0.5);
+        p.up();
+        p.walk(-lado);
+
     }
 }
 
@@ -192,7 +250,7 @@ void fractal(){
 
     //se speed = 0 entao ele faz o mais rapido possivel
     //se foi a partir de 1 ele controla a velocidade
-    p.setSpeed(30);
+    p.setSpeed(0);
 
     int lado = 100;
 
@@ -203,9 +261,10 @@ void fractal(){
     //triangulo(p,lado);
     //flocoDeNeve(p,lado);
     //trigo(p,lado);
-    quadradoEspiral(p,lado);
+    //quadradoEspiral(p,lado);
     //circulo(p,lado);
     //espera clicar no botao de fechar
+    //oErradoQueDeuCerto(p,lado);
     p.wait();
 }
 
