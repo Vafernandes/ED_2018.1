@@ -132,7 +132,7 @@ void quadradoEspiral(Pen& p, int lado){
 
         if(lado < 5)
             return;
-        for(int i = 0; i < 1; i++){
+
             p.walk(lado);
             p.right(90);
 
@@ -150,7 +150,25 @@ void quadradoEspiral(Pen& p, int lado){
             p.rotate(60);
             p.down();
             quadradoEspiral(p, lado - 5);
-        }
+
+}
+
+void circulos(Pen &p, int lado){
+    if(lado < 1)
+        return;
+    p.setColor(rand()%255, rand()%255 ,rand()%255);
+    p.circle(lado);
+    for(int i = 0; i < 6; i++){
+        p.right(60);
+        p.up();
+        p.setColor(rand()%255, rand()%255 ,rand()%255);
+        p.walk(lado);
+        p.down();
+        circulos(p, lado * 0.4 );
+        p.up();
+        p.walk(-lado);
+        p.down();
+    }
 }
 
 void fractal(){
@@ -167,9 +185,10 @@ void fractal(){
 
     //se speed = 0 entao ele faz o mais rapido possivel
     //se foi a partir de 1 ele controla a velocidade
-    p.setSpeed(0);
+    p.setSpeed(30);
 
     int lado = 100;
+
 //================================Funções======================================
 
     //emboa(p, lado);
@@ -178,7 +197,7 @@ void fractal(){
     //flocoDeNeve(p,lado);
     //trigo(p,lado);
     quadradoEspiral(p,lado);
-
+    //circulos(p,lado);
     //espera clicar no botao de fechar
     p.wait();
 }
