@@ -14,7 +14,7 @@
   
 ## O que foi feito?
 
-  - Os fractais emboa, triângulo, floco de neve, trigo, árvore, quadrado espiral.
+  - Os fractais emboa, triângulo, floco de neve, trigo, árvore, quadrado espiral, circulo, oErradoQueDeuCerto.
   
   - O FLOCO DE NEVE consiste na chamada de 5 blocos com a recursividade, basicamente 
     foi preciso andar o valor do lado virar seu respectivo ângulo(72 graus já que eram 5 lados), 
@@ -34,3 +34,9 @@
     fazemos um laço 'for', e desenhamos o primeiro quadrado antes de chamar a recursão, andamos um lado para dar
     espaço e desenhar outro triângulo, faremos uma elevação com a função 'up', para que o próximo quadrado não fique 
     no mesmo nível que o quadrado anterior, com um pequena inclinação, após isso, chamaremos a recusão.
+    
+  - CIRCULO , primeiramente deve-se desenhar o círculo e virar uma certa angulação para
+    desenha um raio que irá desenhar a figura na periferia do círculo, após isso,chama-se a recursão e usa-se a função up
+    e ando menos o valor do lado, para que as bolinhas fiquem centralizadas.
+    
+  - OErradoQueDeuCerto , apenas mudando um parâmetro na chamda da recursão do círculo, ele tendeu a uma figura.
