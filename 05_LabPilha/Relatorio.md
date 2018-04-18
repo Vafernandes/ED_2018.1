@@ -1,4 +1,4 @@
-#05_LabPilha
+05_LabPilha
 
 O que você fez?
 
@@ -9,11 +9,11 @@ Com quem você fez?
      
    Com o grupo de estudo que criamos, pedi ajuda a um amigo em especial.
        
-  O que aprendeu a fazer?
+O que aprendeu a fazer?
      
    Entendi como funcionava o conceito da pilha nesta atividade.
-     
-  O que tem dificuldade ainda?
+
+O que tem dificuldade ainda?
     
    Ainda em pilha, a parte teórica foi bem esclarecedora,mas a maior dificuldade é implementar, preciso fazer
    alguns exercícios sobre pilha para esclarecer melhor os conceitos de maneira aplicada.
