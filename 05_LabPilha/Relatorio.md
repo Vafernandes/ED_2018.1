@@ -1,8 +1,10 @@
 05_LabPilha
 
 O que você fez?
-Refiz todo o cógido mostrado em sala, fiz os métodos 'furar_lab', 'aleatório'(este método consiste
-em pegar um elemento passado como parâmetro de um vetor), 'showLab' e 'lab_pilha'.
+
+   Refiz todo o cógido mostrado em sala, fiz os métodos 'furar_lab', 'aleatório'(este método consiste
+   em pegar um elemento passado como parâmetro de um vetor), 'showLab' e 'lab_pilha'.
+
 Com quem você fez?
      
    Com o grupo de estudo que criamos, pedi ajuda a um amigo em especial.
